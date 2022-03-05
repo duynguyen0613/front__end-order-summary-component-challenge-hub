@@ -190,6 +190,7 @@ body {
 .card__footer .btn--payment {
     background-color: var(--c-bright-blue);
     color: #fff;
+    box-shadow: 0px 10px 15px rgba(71, 74, 236, 0.6);
 }
 
 .card__footer .btn--cancel {
