@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* font read hat display */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*  */
+
+:root {
+    --c-pale-blue: hsl(225, 100%, 94%);
+    --c-bright-blue: hsl(245, 75%, 52%);
+    /*  */
+    --c-vary-pale-blue: hsl(225, 100%, 98%);
+    --c-desaturated-blue: hsl(224, 23%, 55%);
+    --c-dark-blue: hsl(223, 47%, 23%);
+    /*  */
+    --ff-Red-Hat-Display: "Red Hat Display", sans-serif;
+    --fw-1: 500;
+    --fw-2: 700;
+    --fw-3: 900;
+}
+
+
+/* basic reset */
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    color: var(--c-bright-blue);
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+a.btn {
+    font-weight: var(--fw-2);
+    text-decoration: none;
+    color: var(--c-desaturated-blue);
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+}
+
+
+/*  */
+
+
+/* ultilities classes */
+
+.text-bold {
+    font-weight: var(--fw-3);
+}
+
+.text-regular {
+    color: rgb(161, 161, 161);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.m-3 {
+    margin: 3rem;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+.px-3 {
+    padding: 0 3rem;
+}
+
+.title {
+    font-size: 1.8rem;
+}
+
+.text {
+    font-size: 1.2rem;
+}
+
+
+/*  */
+
+body {
+    min-width: 320px;
+    max-width: 1400px;
+    width: 85%;
+    min-height: 100vh;
+    /*  */
+    margin: 0 auto;
+    padding: 4rem 0;
+    /*  */
+    background: var(--c-vary-pale-blue);
+    font-size: 1.6rem;
+    font-family: var(--ff-Red-Hat-Display);
+    line-height: 1.5;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card__plan {
+    background: var(--c-vary-pale-blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*  */
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    /*  */
+    border-radius: 15px;
+}
+
+.card__plan--title {
+    font-size: 1.2rem;
+    font-weight: var(--fw-2);
+}
+
+.card__plan--price {
+    font-size: 1rem;
+    font-weight: var(--fw-1);
+}
+
+.card__footer {
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+.card__footer .btn--payment {
+    background-color: var(--c-bright-blue);
+    color: #fff;
+}
+
+.card__footer .btn--cancel {
+    background-color: none;
+}
+
+
+/* 
+
+<div class="card__footer">
+            <a href="#" class="btn btn--payment">Proceed to Payment</a>
+            <a href="#" class="btn btn--cancel">Cancel Order</a>
+        </div>
+*/
